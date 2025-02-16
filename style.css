@@ -295,7 +295,7 @@ footer .footer-text p {
   }
 
   .botoes{
-    flex-direction: row; /* Alinhando os botões lado a lado */
+    flex-direction: column; /* Alinhando os botões lado a lado */
       justify-content: center;
       padding: 0;
       gap: 20px; /* Espaçamento entre os botões */
