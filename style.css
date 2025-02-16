@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0; 
+    text-decoration: none;                   
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*Início do Header*/
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0040FF;
+  height: 120px;
+  padding: 0 20px;
+  position: relative;
+}
+
+/* Estilização do Logo */
+header img {
+  max-height: 100px;
+  width: auto;
+}
+
+/* Estilização do Nome */
+header h1 {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  left: 100px;
+}
+
+/* Estilização do Menu */
+nav {
+  position: absolute;
+  right: 150px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 50px;
+}
+
+/* Botões do Menu */
+.botao {
+  color: white;
+  background-color: #0040FF;
+  padding: 9px 12px;
+  border-radius: 10px;
+  transition: 0.1s;
+  font-size: 20px;
+}
+
+.botao:hover {
+  background-color: #0101DF;
+}
+
+/*Fim do Header*/
+
+/*Início do Corpo*/
+h1{
+    padding: 50px;
+    text-align: center;
+}
+
+.caixa{
+display: flex;
+align-items: center;
+}
+
+.caixa2{
+  display: flex;
+  align-items: center;
+  }
+
+.caixaimg{
+padding: 50px;
+}
+
+.caixatxt{
+padding: 50px;
+}
+
+.slideshow-container {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.img5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+table{
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+
+  th, td{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th{
+    background-color: #0040FF;
+    color: white;
+    font-size: 1.1em;
+  }
+
+  td{
+    background-color: #f9f9f9;
+    font-size: 1em;
+  }
+
+  tr:nth-child(even) td{
+    background-color: #f1f1f1;
+  }
+
+  tr:hover td{
+    background-color: #f0f8ff;
+  }
+
+  caption{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  table th, table td{
+    transition: background-color 0.3s ease;
+  }
+
+  ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li{
+    display: inline-block;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contato{
+    display: flex;
+    background-color: #0040FF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+
+.contato img {
+  max-height: 20px;
+  width: auto;
+  margin-right: 8px;
+}
+
+.contato{
+    animation: animate-outline 1s ease-out infinite;
+}
+
+@keyframes animate-outline{
+    from {
+        outline: 0px solid #0040FF;
+    }
+
+    to {
+        outline: 15px solid #4f9bf900;
+    }
+}
+
+/*Fim do Corpo*/
+
+/*Início do Rodapé*/
+
+footer {
+  background-color: #0040FF;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  height: auto;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 5px;
+}
+
+footer .footer-content img {
+  max-height: 50px;
+  width: auto;
+}
+
+footer .footer-text {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+footer .footer-text p {
+  margin: 2px 0;
+}
+
+/*Fim do Rodapé*/
+
+/* Responsividade */
+
+@media screen and (max-width: 1200px){
+  
+  header {
+      flex-direction: column;
+      height: auto;
+      padding: 10px 0;
+  }
+
+  header img {
+      max-height: 100px; /* Aumentei a logo */
+      margin-bottom: 5px;
+  }
+
+  header h1 {
+      position: static;
+      text-align: center;
+      margin-bottom: -45px; /* Reduzi o espaçamento abaixo do nome */
+      margin-top: -45px;
+  }
+
+  nav {
+      position: static;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 5px; /* Ajustei a margem superior */
+  }
+
+  nav ul {
+      flex-direction: row; /* Alinhando os botões lado a lado */
+      justify-content: center;
+      padding: 0;
+      gap: 20px; /* Espaçamento entre os botões */
+  }
+
+  nav li {
+      margin: 0;
+  }
+
+  .caixa{
+    flex-direction: column-reverse;
+  }
+
+  .caixa2{
+    flex-direction: column;
+  }
+
+  .botoes{
+    flex-direction: row; /* Alinhando os botões lado a lado */
+      justify-content: center;
+      padding: 0;
+      gap: 20px; /* Espaçamento entre os botões */
+  }
+  }
+
+
